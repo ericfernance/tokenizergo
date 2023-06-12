@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.10.3" target_tk="gtk-4.0">
+  <ui>
+	(1,None,"tokenizer.ui","tokenizer.ui",None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,4,"GtkApplicationWindow","MainWindow",None,None,None,None,None),
+	(1,5,"GtkHeaderBar",None,4,None,"titlebar",None,-1),
+	(1,6,"GtkMenuButton","topMenu",5,None,None,None,None),
+	(1,7,"GtkBox",None,4,None,None,None,None),
+	(1,8,"GtkLabel",None,7,None,None,None,None),
+	(1,9,"GtkTextView",None,7,None,None,None,1),
+	(1,10,"GtkTextView",None,7,None,None,None,3),
+	(1,11,"GtkLabel",None,7,None,None,None,2),
+	(1,12,"GtkBox",None,7,None,None,None,4),
+	(1,13,"GtkButton","buttonDecode",12,None,None,None,None),
+	(1,14,"GtkButton","buttonEncode",12,None,None,None,None)
+  </object>
+  <object_property>
+	(1,4,"GtkWindow","default-height","600",None,None,None,None,None),
+	(1,4,"GtkWindow","default-width","600",None,None,None,None,None),
+	(1,4,"GtkWindow","mnemonics-visible","True",None,None,None,None,None),
+	(1,6,"GtkMenuButton","direction","none",None,None,None,None,None),
+	(1,6,"GtkWidget","height-request","4",None,None,None,None,None),
+	(1,7,"GtkOrientable","orientation","vertical",None,None,None,None,None),
+	(1,7,"GtkWidget","margin-bottom","2",None,None,None,None,None),
+	(1,7,"GtkWidget","margin-end","2",None,None,None,None,None),
+	(1,7,"GtkWidget","margin-start","2",None,None,None,None,None),
+	(1,7,"GtkWidget","margin-top","2",None,None,None,None,None),
+	(1,8,"GtkLabel","label","Input",None,None,None,None,None),
+	(1,9,"GtkTextView","accepts-tab","False",None,None,None,None,None),
+	(1,9,"GtkTextView","input-purpose","terminal",None,None,None,None,None),
+	(1,9,"GtkTextView","monospace","True",None,None,None,None,None),
+	(1,9,"GtkTextView","wrap-mode","char",None,None,None,None,None),
+	(1,9,"GtkWidget","vexpand","True",None,None,None,None,None),
+	(1,10,"GtkTextView","input-purpose","terminal",None,None,None,None,None),
+	(1,10,"GtkTextView","monospace","True",None,None,None,None,None),
+	(1,10,"GtkTextView","wrap-mode","char",None,None,None,None,None),
+	(1,10,"GtkWidget","vexpand","True",None,None,None,None,None),
+	(1,11,"GtkLabel","label","Output",None,None,None,None,None),
+	(1,13,"GtkButton","label","Decode",None,None,None,None,None),
+	(1,14,"GtkButton","label","Encode",None,None,None,None,None)
+  </object_property>
+</cambalache-project>

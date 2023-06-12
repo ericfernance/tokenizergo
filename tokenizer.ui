@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.3 -->
+<interface>
+  <!-- interface-name tokenizer.ui -->
+  <requires lib="gtk" version="4.6"/>
+  <object class="GtkApplicationWindow" id="MainWindow">
+    <property name="default-height">600</property>
+    <property name="default-width">600</property>
+    <property name="mnemonics-visible">True</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar">
+        <child>
+          <object class="GtkMenuButton" id="topMenu">
+            <property name="direction">none</property>
+            <property name="height-request">4</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="margin-bottom">2</property>
+        <property name="margin-end">2</property>
+        <property name="margin-start">2</property>
+        <property name="margin-top">2</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Input</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <property name="accepts-tab">False</property>
+            <property name="input-purpose">terminal</property>
+            <property name="monospace">True</property>
+            <property name="vexpand">True</property>
+            <property name="wrap-mode">char</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Output</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <property name="input-purpose">terminal</property>
+            <property name="monospace">True</property>
+            <property name="vexpand">True</property>
+            <property name="wrap-mode">char</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <child>
+              <object class="GtkButton" id="buttonDecode">
+                <property name="label">Decode</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="buttonEncode">
+                <property name="label">Encode</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
